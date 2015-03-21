@@ -20,8 +20,12 @@
     <div class="navbar navbar-default navbar-static-top navbar-main" role="navigation" ng-controller="ToolbarController">
       <div ng-include src="'toolbar.html'"></div>
     </div>
-    <div class="body" ng-class="theme">
-      <div ui-view class="main-view" autoscroll="false"></div>
+    <div class="body" ng-class="theme" ui-layout="{flow: 'column'}">
+      <div ui-layout-container autoscroll="false" style="top:36px">
+        <div ng-controller="ChatController">Hello doods</div>
+      </div>
+      <div ui-layout-container ui-view class="main-view" autoscroll="false"
+        style="top:36px"></div>
     </div>
     <div loading-indicator></div>
     <footer ng-if="!splashpage" ng-class="alert_level" ng-controller="FooterController">

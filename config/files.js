@@ -30,7 +30,8 @@ module.exports = function(lineman) {
         "vendor/js/moment-with-locales.js",
         "vendor/js/bytebuffer.js",
         "vendor/js/sha256.js",
-        "vendor/js/jdenticon.js"
+        "vendor/js/jdenticon.js",
+        "vendor/js/ui-layout.js"
       ],
       app: [
         "app/js/app.js",
@@ -53,7 +54,8 @@ module.exports = function(lineman) {
         "vendor/css/font-awesome.css",
         "vendor/css/ark.css",
         "vendor/css/xeditable.css",
-        "vendor/css/ui-grid.css"
+        "vendor/css/ui-grid.css",
+        "vendor/css/ui-layout.css"
       ],
       app: [
         "app/css/bootstrap_overrides.css",
